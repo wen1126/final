@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Pastry</title>
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/indexmain.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/merchandise.css">
+    <link rel="stylesheet" href="../assets/css/merchandisecard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="../pages/index.html"><img src="../assets/img/logo.png"
+                style="width: 100px;height:auto;float: left;padding-left: 25px;"></a>
+        <ul>
+
+            <li><a href="../pages/Search.html"><i class="fas fa-search"></i></a></li>
+
+            <div class="dropdown">
+                <li class="dropbtn">PRODUCTS ≡</li>
+                <div class="dropdown-content">
+                    <a href="../pages/topsales.html">Top Sales</a>
+                    <a href="../pages/Event.html">Event</a>
+                    <a href="../pages/Entremet.html">Entremet</a>
+                    <a href="../pages/Petit_Gateau.html">Petit Gateau</a>
+                    <a href="../pages/Beverage.html">Beverage</a>
+                </div>
+            </div>
+
+            <li><a href="../pages/Preview.html">Preview</a></li>
+            <li><a href="../pages/Merchandise.html">Merchandise </a></li>
+            <li><a href="../pages/About.html">About us</a></li>
+            <li><a href="../pages/Cart.html">Cart ▶</a></li>
+            <li><a href="../pages/Login.html">Login</a></li>
+        </ul>
+        <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="oop"></div>
+        <div class="fixed">
+            <h1 class="large">Black Pastry Here!</h1>
+            <p>Let's Check this Out!</p>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="fixed">
+            <h1>Christmas Event</h1>
+            <img src="../assets/img/Petit Gateour/Xmas/IMG_6569.PNG" style="width: 500px;height: auto;">
+            <p>Ho Ho Ho!
+                Merry X'mas!
+                The annual Christmas season is here again!
+                This year we have designed five cakes and one cake
+                This time, we were able to catch up with the progress and design these cakes more smoothly than
+                expected.
+                If you are interested in ordering, please contact us
+                FB: BLACK PASTRY</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>Our Packaging Boxes</h1>
+            <img src="../assets/img/MirrorGlaze/a2.jpg" style="width: 500px;height: auto;">
+            <p>We offer exquisite, elegant and delicious cakes. In addition, we make our boxes just as sophisticated and
+                elegant, so
+                that our store can show our unique characteristics and standards!</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>MirrorGlaze Heart</h1>
+            <img src="../assets/img/MirrorGlaze/IMG_6567.PNG" style="width: 500px;height: auto;">
+            <p>We accept customer-defined cake shapes, flavors and desired colors.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>MirrorGlaze Cube</h1>
+            <img src="../assets/img/MirrorGlaze/IMG_6521.PNG" style="width: 500px;height: auto;">
+            <p>The cake that requested by a customer on Father's Day</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>Puff</h1>
+            <a href="../pages/topsales.html"><img src="../assets/img/Petit Gateour/IMG_6547.PNG"
+                    style="width: 500px;height: auto;"></a>
+            <p>The most popular and most often made dessert in our store!</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>Petit Gateau</h1>
+            <img src="../assets/img/Petit Gateour/IMG_6546.PNG" style="width: 500px;height: auto;">
+            <p>The most popular dessert in our store is a set menu for special holidays.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fixed">
+            <h1>Beverage</h1>
+            <img src="../assets/img/Beverage/latte.jpg" style="width: 500px;height: auto;">
+            <p>We not only provide cake,we also provide coffee and some Beverage, so that
+                customer can enjoy our Beverage while having cakies
+            </p>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="fixed">
+            <h1>Let's Shop Now!</h1>
+            <a href="../pages/Merchandise.html"><button>Shop Now</button></a>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    consoleText(['Hi Dear!', 'Welcome To Black Pastry', 'Scroll Down for more!'], 'text', ['lightyellow', 'orange',
+        'lightwhite'
+    ]);
+
+    function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ['#fff'];
+        var visible = true;
+        var con = document.getElementById('console');
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id)
+        target.setAttribute('style', 'color:' + colors[0])
+        window.setInterval(function () {
+
+            if (letterCount === 0 && waiting === false) {
+                waiting = true;
+                target.innerHTML = words[0].substring(0, letterCount)
+                window.setTimeout(function () {
+                    var usedColor = colors.shift();
+                    colors.push(usedColor);
+                    var usedWord = words.shift();
+                    words.push(usedWord);
+                    x = 1;
+                    target.setAttribute('style', 'color:' + colors[0])
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (letterCount === words[0].length + 1 && waiting === false) {
+                waiting = true;
+                window.setTimeout(function () {
+                    x = -1;
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (waiting === false) {
+                target.innerHTML = words[0].substring(0, letterCount)
+                letterCount += x;
+            }
+        }, 120)
+        window.setInterval(function () {
+            if (visible === true) {
+                con.className = 'console-underscore hidden'
+                visible = false;
+
+            } else {
+                con.className = 'console-underscore'
+
+                visible = true;
+            }
+        }, 400)
+    }
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Pastry</title>
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/topsalesmain.css">
+    <link rel="stylesheet" href="../assets/css/topslide.css">
+    <link rel="stylesheet" href="../assets/css/gotop.css">
+
+    
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+.header{
+     background:#4F4433;
+}
+
+</style>
+
+<body bgcolor="#241E15">
+         <div class="header">
+        <a href="../pages/index.html"><img src="../assets/img/logo.png"
+                style="width: 100px;height:auto;float: left;padding-left: 25px;"></a>
+            <ul>
+                
+                <li><a href="../pages/Search.html"><i class="fas fa-search"></i></a></li>
+
+                <div class="dropdown">
+                    <li class="dropbtn">PRODUCTS ≡</li>
+                    <div class="dropdown-content">
+                        <a href="../pages/topsales.html">Top Sales</a>
+                        <a href="../pages/Event.html">Event</a>
+                        <a href="../pages/Entremet.html">Entremet</a>
+                        <a href="../pages/Petit_Gateau.html">Petit Gateau</a>
+                        <a href="../pages/Beverage.html">Beverage</a>
+                    </div>
+                </div>
+
+                <li><a href="../pages/Preview.html">Preview</a></li>
+                <li><a href="../pages/Merchandise.html">Merchandise </a></li>
+                <li><a href="../pages/About.html">About us</a></li>
+                <li><a href="../pages/Cart.html">Cart ▶</a></li>
+                <li><a href="../pages/Login.html">Login</a></li>
+            </ul>
+    </div>
+        
+            <h1 style="text-align:center;font-size:80px;margin-top:30px;margin-bottom:150px;">
+                <img src="../assets/img/logo.png" style="width:300px;height:400px;"><br>BLACK PASTRY<br>
+                <form action="admin/function/search.jsp" method="get">
+                    <select name="type" style="padding:10px;background:#f9813a;font-size:18px;width:100px;height:50px;border-radius: 50px;">
+                    <option style="text-align:center;" value="product">產品名</option>
+                    <option style="text-align:center;" value="category">分類</option>
+                    </select>
+                    <input type="text" name="goal" style="font-size:20px;background:#ffb26b;margin-top:20px;text-align:center;width:60%;height:50px;border-radius: 50px;" required>
+                    <input type="submit" style="font-size:20px;background:#f9813a;width:80px;height:50px;border-radius: 50px;" value="查詢">
+                </form>
+            </h1>
+
+
+</body>
+<footer>
+    <p> © Copyright 2020 CYIM All Rights Reserved
+        ® Black Pastry
+    </p>
+        <p>您是本網站第 <%= counter %> 位貴客！</p>
+
+    <div class="shopinfo">
+        <div class="social">
+            <p><b>本店連結</b></p>
+            <a href="https://www.instagram.com/blackpastrysibu/" target="__blank"><img src="../assets/img/ig_footer.png"></a>
+            <a href="https://www.facebook.com/blackpastrysibu" target="__blank"><img src="../assets/img/fb_footer.png"></a>
+        </div>
+
+        <div class="map">
+            <p><b>我們在哪？</b></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.6592234955383!2d111.8383493153288!3d2.280190858513825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31f9d54429f57dff%3A0x738af39faa72e4be!2sBlack%20Pastry!5e0!3m2!1szh-TW!2stw!4v1608966344754!5m2!1szh-TW!2stw"
+                width="260" height="160">
+            </iframe>
+        </div>
+</footer>
+<script src='../assets/js/gotop.js'></script>
+
+</html>
